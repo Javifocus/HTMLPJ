@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head>              <!-- Esta la seccion head que contiene la configuracion de ajuste automatico de resolucion -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes y Comunicaciones</title>
@@ -25,7 +25,7 @@
         }
     </style>
 </head>
-<body>
+<body>                 <!-- Esta es la seccion que contiene de la informacion mostrada en la pagina -->
     <header>
         <h1>Redes y Comunicaciones</h1>
         <nav>
@@ -82,7 +82,22 @@
         </article>
     </main>
 
-    <footer>
+    <!-- Esta es la seccion de comentarios -->
+<section id="comments">
+    <h2>Comentarios</h2>
+    <form action="/submit_comment" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="comment">Comentario:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    
+    <footer>        <!-- Este es el footer que contiene la informacion de derechos de autor -->
         <p>&copy; 2025 Redes y Comunicaciones</p>
         <p>&copy; Javier Ordaz, Cristopher Tabata, Lizandro Martinez, Jean Carlos Sequea</p>
     </footer>
